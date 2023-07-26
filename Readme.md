@@ -1,17 +1,17 @@
 
-**简易多用户聊天(go)**
+#### **简易多用户聊天(go)**
 
-功能:\
+##### 功能:
     - 支持大厅聊天\
     - 支持使用[\help]查询可用命令\
     - 支持使用[\who]查询在线用户\
     - 支持使用[\rename new_name]改名\
     - 支持使用[\to user_name info]给指定user发送info\
 
-启动服务器:
+##### 启动服务器:
     `./server_main`
 
-启动客户端:
+##### 启动客户端:
     `./client_main  [-ip server_ip]  [-port server_port]`
 
 ---
