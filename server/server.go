@@ -33,9 +33,9 @@ func NewServer(ip string, port int) *Server { // 这个不能是成员方法
 
 /*
 	 server
-								创建socket
+					创建socket
 		合成一步了listen          bind ip port
-								listen
+					listen
 		accept
 */
 func (s *Server) Start() {
