@@ -83,13 +83,11 @@ func (s *Server) handle_conn(cfd net.Conn) {
 	s.infoqueue <- fmt.Sprintf("%s 加入房间.", usr.Name)
 }
 
-/*
-命令检测
+/*命令检测
 return
-
-	   -1  该info错误
-		0, _, _   无命令
-		1, name, command 有命令，发出者，命令
+	-1  该info错误
+	0, _, _   无命令
+	1, name, command 有命令，发出者，命令
 */
 func (s *Server) command_check(info *string) (int, string, string) {
 	if len(*info) <= 1 {
@@ -117,7 +115,7 @@ TODO: 之后可以命令分开实现，用枚举量表示
 \help
 \who
 \rename
-\toff
+\to
 */
 func (s *Server) do_command(name, com *string) {
 	tmp := strings.Split(*com, " ")
